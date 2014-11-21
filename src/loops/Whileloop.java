@@ -1,0 +1,22 @@
+package loops;
+
+public class Whileloop {
+
+	/*
+	 * while(Boolean_expression)
+	 * {
+   	 * //Statements
+	 * }
+	 */
+	
+	public static void main(String args[]) {
+	      int x = 10;
+
+	      while( x < 20 ) {
+	         System.out.print("value of x : " + x );
+	         x++;
+	         System.out.print("\n");
+	      }
+	   }
+
+}

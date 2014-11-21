@@ -1,5 +1,9 @@
 package javaclass;
 
+import java.util.Iterator;
+
+import org.json.JSONObject;
+
 public class ACMEBicycle implements IBicycle{
 	
 	int cadence = 0;
@@ -12,7 +16,8 @@ public class ACMEBicycle implements IBicycle{
 
     public void changeGear(int newValue) {
          gear = newValue;
-    }
+         
+            }
 
     public void speedUp(int increment) {
          speed = speed + increment;   
@@ -21,6 +26,10 @@ public class ACMEBicycle implements IBicycle{
     public void applyBrakes(int decrement) {
          speed = speed - decrement;
     }
+    
+    public void applyBrakesyu(int decrement) {
+        speed = speed - decrement;
+   }
 
 
 	public ACMEBicycle() {
