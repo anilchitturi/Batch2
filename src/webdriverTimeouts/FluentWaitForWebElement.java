@@ -35,7 +35,7 @@ public class FluentWaitForWebElement {
                 until(new Function<WebElement, Boolean>() {
                     @Override
                     public Boolean apply(WebElement element) {
-                        return element.getText().endsWith("044");
+                        return element.getText().endsWith("04");
                     }
                 }
                 );
