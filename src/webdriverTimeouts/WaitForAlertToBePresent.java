@@ -12,7 +12,8 @@ public class WaitForAlertToBePresent {
     private static WebDriver driver;
     
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args)  {
+    	try {
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get("file:///E:/waitforalert.html");
@@ -24,7 +25,12 @@ public class WaitForAlertToBePresent {
         
         String alrt = driver.switchTo().alert().getText();
         System.out.print(alrt);
-        Thread.sleep(1000);
+        
+			Thread.sleep(1000);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         driver.quit();
     
 }

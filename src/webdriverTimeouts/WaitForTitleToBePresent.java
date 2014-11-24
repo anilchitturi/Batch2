@@ -15,7 +15,7 @@ public class WaitForTitleToBePresent {
     public static void main(String[] args) throws InterruptedException {
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
-        driver.get("file:///E:/waitforelementpresentrty.html");
+        driver.get("file:///E:/waitforelementpresent.html");
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//input[@name='fname']")).sendKeys("My Name");
         driver.findElement(By.xpath("//a[contains(text(),'Click Here')]")).click();

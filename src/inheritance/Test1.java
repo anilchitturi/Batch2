@@ -17,7 +17,7 @@ private static WebDriver driver=null;
 		driver=dv.dranceInstance("firefox");*/
 		
 		//getting webdriver instance by extending the base class
-		//driver=dranceInstance("firefox");
+		driver=dranceInstance("firefox");
 		driver.get("http://www.google.com");
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebElement element=driver.findElement(By.id("gbqfq"));
