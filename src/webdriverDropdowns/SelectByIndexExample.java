@@ -13,6 +13,7 @@ public class SelectByIndexExample {
    	WebDriver driver = new FirefoxDriver();
    	driver.get("file:///E:/nano/Batch2/exampleTemplates/selectbyvaluedemo.html");
    	WebElement element=driver.findElement(By.name("Mobiles"));
+   	//List<WebElement> dlist= element.getOptions();
    	Select se=new Select(element);
    	se.selectByIndex(3);
  	}
