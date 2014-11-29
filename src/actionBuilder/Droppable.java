@@ -7,18 +7,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class Draggable {
+public class Droppable {
 	
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub 
-		WebDriver driver = new FirefoxDriver();
-//		System.setProperty("webdriver.chrome.driver", "D:/Chromedriver.exe");
-//		WebDriver driver = new ChromeDriver();
-		driver.get("http://jqueryui.com/demos/draggable/");
+		//WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:/Chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://jqueryui.com/demos/droppable/");
 		 Thread.sleep(10000);
 		 driver.switchTo().frame(driver.findElement(By.cssSelector("iframe[class='demo-frame']")));
-		 WebElement drag_item=driver.findElement(By.xpath("//*[@id='draggable']"));
-		 new Actions(driver).dragAndDropBy(drag_item, 120, 120).build().perform();
+		 WebElement draggable = driver.findElement(By.id("draggable"));
+		 WebElement droppable = driver.findElement(By.id("droppable")); 
+		 new Actions(driver).dragAndDrop(draggable, droppable).build().perform();
 	}
 
 }

@@ -16,6 +16,7 @@ public class Multipleactions {
 		driver.get("https://www.facebook.com");
 		 Thread.sleep(10000);
 		WebElement email_text=driver.findElement(By.id("email"));
+		email_text.sendKeys("ddd");
 		Actions builder= new Actions(driver);
 		 Action mosehover=builder.moveToElement(email_text)
 				                 .click()
