@@ -42,5 +42,6 @@
 	<classpathentry kind="lib" path="C:/Users/anilc/Downloads/selenium-java-2.43.1/selenium-2.43.1/selenium-java-2.43.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/anilc/Downloads/selenium-java-2.43.1/selenium-2.43.1/selenium-java-2.43.1-srcs.jar"/>
 	<classpathentry kind="lib" path="C:/Users/anilc/Downloads/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/anilc/Downloads/junit-4.10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
