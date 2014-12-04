@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <test name="test1(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testNg.chjunitdemo">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testJunitdemo"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testNg.chjunitdemo -->
+      <class name="testNg.ffjunitdemo">
+        <methods>
+          <include name="setUp"/>
+          <include name="testJunitdemo"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testNg.ffjunitdemo -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

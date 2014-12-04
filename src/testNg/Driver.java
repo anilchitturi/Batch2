@@ -1,16 +1,16 @@
-package inheritance;
+package testNg;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 
 public class Driver {
-
-	public static WebDriver driverInstance(String browerType){
+	public WebDriver driverInstance(String browserType){
 		WebDriver driver=null;	
-		if(browerType=="firefox"){
+		if(browserType=="firefox"){
 		 driver = new FirefoxDriver();}
-		else if(browerType=="chrome"){
+		else if(browserType=="chrome"){
 		System.setProperty("webdriver.chrome.driver", "D:/Chromedriver.exe");
 		driver = new ChromeDriver();
 	}
